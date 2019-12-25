@@ -1,0 +1,21 @@
+# 内存
+megs: 4
+
+# BIOS
+romimage: file=$BXSHARE/BIOS-bochs-latest
+
+# VGA BIOS
+vgaromimage: file=$BXSHARE/VGABIOS-lgpl-latest
+
+# 磁盘
+floppya: 1_44=c05_mbr.img, status=inserted
+
+# 硬盘
+ata0: enabled=1,ioaddr1=0x1f0
+
+boot: floppy
+
+#log: bochsout.txt
+log: /dev/null
+
+mouse: enabled=0
